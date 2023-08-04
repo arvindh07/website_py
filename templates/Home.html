@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Career jobs</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <style>
+    .banner{
+      width: 100%;
+      object-fit: cover;
+      height:400px;
+    }
+  </style>
+</head>
+<body>
+    <div class="container">
+      <div class="header">
+    <h1 class="text-center mt-2 mb-4">Welcome to career jobs</h1>
+        <img src="https://websitepy--arvindh07.repl.co/static/banner.jpg" class="banner"/>
+      </div>
+
+      <div class="about my-5">
+        <h3 class="text-center mb-3">About page</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat illo, aperiam deleniti debitis laboriosam nesciunt dolore quod totam incidunt quis fugiat ab voluptatem omnis maiores? Deserunt tenetur ab vero reprehenderit!Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat illo, aperiam deleniti debitis laboriosam nesciunt dolore quod totam incidunt quis fugiat ab voluptatem omnis maiores? Deserunt tenetur ab vero reprehenderit!Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat illo, aperiam deleniti debitis laboriosam nesciunt dolore quod totam incidunt quis fugiat ab voluptatem omnis maiores? Deserunt tenetur ab vero reprehenderit!Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat illo, aperiam deleniti debitis laboriosam nesciunt dolore quod totam incidunt quis fugiat ab voluptatem omnis maiores? Deserunt tenetur ab vero reprehenderit!</p>
+      </div>
+
+      <div class="jobs my-5">
+        <h3 class="text-center mb-3">Jobs</h3>
+        {% for job in jobs %}
+          {% include "JobItem.html" %}
+        {% endfor %}
+      </div>
+
+      <div class="mx-auto mb-5 text-center">
+      <button type="button" class="btn btn-primary btn-lg">Contact us</button>
+      </div>
+      
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>
